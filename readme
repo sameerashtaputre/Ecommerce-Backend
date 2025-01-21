@@ -1,0 +1,56 @@
+E-Commerce Website
+Features:
+User Roles:
+
+Admin: Manage products, orders, and users.
+Customer: Browse products, add to cart, and place orders.
+Product Management:
+
+CRUD operations for products (Admin only).
+Search and filter (by category, price, etc.).
+Shopping Cart:
+
+Add/remove items in the cart.
+Update quantities and calculate totals.
+Order Management:
+
+Place orders, track status (pending, shipped, delivered).
+View past orders.
+Payment Integration:
+
+Use Stripe or Razorpay for online payments.
+Authentication:
+
+Login/signup using JWT for security.
+Other Features:
+
+Responsive design.
+Wishlist functionality.
+User reviews and ratings for products.
+
+////\\\\\\
+- server/
+  - models/
+    - User.js
+    - Product.js
+    - Order.js
+  - routes/
+    - auth.js
+    - product.js
+    - order.js
+  - controllers/
+    - authController.js
+    - productController.js
+    - orderController.js
+  - utils/
+    - errorHandler.js
+  - config/
+    - db.js
+  - server.js
+
+
+  app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/movie", protectRoute, movieRoutes);
+app.use("/api/v1/tv", protectRoute, tvRoutes);
+app.use("/api/v1/search", protectRoute, searchRoutes);
+app.use("/api/v1/search", searchRoutes);
